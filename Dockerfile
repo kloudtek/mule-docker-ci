@@ -1,4 +1,4 @@
 FROM maven:3.5-jdk-8-slim
 
-COPY setup-image.sh /usr/bin/setup-image
-RUN chmod +x /usr/bin/setup-image
+COPY mvn-init.sh /usr/bin/mvn-init
+RUN chmod +x /usr/bin/mvn-init

@@ -14,9 +14,9 @@ cat >~/.m2/settings.xml <<EOF
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
         <server>
-            <id>anypoint.org.repo</id>
-            <username>${SERVER_USERNAME}</username>
-            <password>${SERVER_PASSWORD}</password>
+            <id>anypoint-org-exchange</id>
+            <username>${ANYPOINT_USERNAME}</username>
+            <password>${ANYPOINT_PASSWORD}</password>
         </server>
         <server>
             <id>mulesoft-releases-ee</id>
@@ -30,7 +30,7 @@ cat >~/.m2/settings.xml <<EOF
             <id>default</id>
             <repositories>
                 <repository>
-                    <id>anypoint.org.repo</id>
+                    <id>anypoint-org-exchange</id>
                     <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${ANYPOINT_ORG}/maven</url>
                 </repository>
                 <repository>
